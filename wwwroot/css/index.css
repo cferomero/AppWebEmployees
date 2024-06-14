@@ -1,0 +1,11 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.section__form {
+    border: 1px solid black;
+}
+.section__form form {
+    border: 1px solid blue;
+}
