@@ -10,6 +10,6 @@ namespace AppWebEmployees.Datos
 
         
         // PONER AQUI LOS MODELOS
-        public DbSet<Producto> Productos { get; set; }
+        public DbSet<Producto> Producto { get; set; }
     }
 }
