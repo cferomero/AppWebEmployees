@@ -1,4 +1,10 @@
+using AppWebEmployees.Datos;
+using Microsoft.EntityFrameworkCore;
+
 var builder = WebApplication.CreateBuilder(args);
+
+// CONFIGURAR CONXION A SQL LOCAL DB
+builder.Services.AddDbContext<ApplicationDBContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("ConexionLocalDB"))); // obteniendo la cadena de conexion
 
 // Add services to the container.
 builder.Services.AddRazorPages();
